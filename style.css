@@ -250,6 +250,7 @@ aside{
     padding: 20px;
     padding-top: 10px;
     text-decoration: none;
+    font-family: 'Roboto',sans-serif;
 }
 
 aside a{
@@ -263,4 +264,8 @@ aside a{
 
 aside a:hover{
     background-color: yellow;
+}
+
+aside h3{
+    padding-left: 30px;
 }
