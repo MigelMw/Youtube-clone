@@ -177,6 +177,7 @@ body{
     display: grid;
     align-items: center;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 .top .right button:hover{
