@@ -239,33 +239,123 @@ body{
 }
 
 /* END OF TOP */
-
+.container{
+    overflow: hidden;
+}
 aside{
-    width: 240px;
-    background: red;
+    width: 260px;
+    background: #060606f5;
     height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    padding: 20px;
+    /* gap: 10px; */
+    /* padding: 20px; */
     padding-top: 10px;
     text-decoration: none;
     font-family: 'Roboto',sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    overflow-y: scroll;
 }
+
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #3030306f; 
+    border-radius: 30px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #303030; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3030306f; 
+  }
 
 aside a{
-    padding: 5px 5px;
-    height: 20px;
-    width: 120px;
-    padding-left: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* justify-content: space-between; */
+    justify-content: flex-start;
+    gap:25px;
+    height: 45px;
+    width: 220px;
     border-radius: 10px;
     transition: all 0.5s ease;
+    color: #f1f1f1;
 }
 
+aside a:nth-child(1){
+    background-color: #3030306f;
+}
+
+aside a:nth-child(1):hover{
+    background-color: #303030;
+}
+
+aside a div{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 50%;
+    margin-left: 30px;
+}
 aside a:hover{
-    background-color: yellow;
+    background-color: #3030306f;
+}
+
+aside .line{
+    /* background: #303030; */
+    /* height: 1px; */
+    width: 95%;
+    margin-left: 0px;
+    margin-top:10px;
+    margin-bottom: 10px;
+    border-bottom: .2px solid #303030;
+}
+
+aside a span{
+    margin-left: 30px;
 }
 
 aside h3{
     padding-left: 30px;
+    color: #f1f1f1;
+    font-size: 16px;
+    line-height: 23px;
+    font-family: 'Roboto',Arial,sans-serif;
+    font-weight: 400;
+    margin-left: 23px;
+    margin-bottom: 5px;
+}
+
+aside .aside-footer .one p{
+    color: #3030306f;
+    cursor: pointer;
+    font-weight: 500;
+    font-family: 'Roboto',sans-serif;
+    font-size: 15px;
+    margin-left: 30px;
+    word-wrap: break-word;
+}
+
+aside .aside-footer .two p{
+    color: #3030306f;
+    cursor: pointer;
+    font-weight: 500;
+    font-family: 'Roboto',sans-serif;
+    font-size: 15px;
+    margin-left: 30px;
+    margin-top: 10px;
+    word-wrap: break-word;
 }
